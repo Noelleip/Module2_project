@@ -1,0 +1,66 @@
+<html html>
+  <head>
+    <title>Add Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" type="text/css" href="./google_map.css" />
+    <!-- <script type="module" src="./index.js"></script> -->
+    <script type="module" src="./google_map.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <h3>My Google Maps Demo</h3>
+    </div>
+    <!--The div element for the map -->
+    <div class="map-container">
+      <div id="floating-panel">
+        <b>Start: </b>
+        <select id="start">
+          <option value="">選擇</option>
+          <option value="22.286761753865942, 114.15184124755562">
+            Sheung Wan Station
+          </option>
+          <option value="22.285533006073102, 114.14280531562079">
+            Sai Ying Pun Station
+          </option>
+          <option value="22.45393827361046, 114.00855522948648">
+            天水圍單車匯合中心
+          </option>
+        </select>
+        <b>End: </b>
+        <select id="end">
+          <option value="22.282673374092703, 114.15812609339194">
+            Central Station
+          </option>
+          <option value="22.286761753865942, 114.15184124755562">
+            Sheung Wan Station
+          </option>
+          <option value="22.395080427963407, 113.97322818470228">屯門站</option>
+        </select>
+      </div>
+      <div id="map"></div>
+      <br />
+      <div>
+        <button id="distance-btn">Calculate Distance and Draw Markers</button>
+      </div>
+      <br />
+      <div><strong>Request</strong></div>
+      <div id="request"></div>
+      <br />
+      <div><strong>Response</strong></div>
+      <div id="response"></div>
+    </div>
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSlr9_j8KPewU5R99i1Iy_p0i6RQZUrJE&callback=initMap&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>

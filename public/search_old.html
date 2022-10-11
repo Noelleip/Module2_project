@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="search_old.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <title>Cycling Friends | Search</title>
+  </head>
+
+  <body>
+    <!--------------Level 1 header start [OLD]----------------->
+    <!-- <div class="row"> -->
+    <!-- <div class="col-12"> -->
+    <!-- <span id="header"></span>
+    <script type="text/JavaScript" src="js/home.js"></script>
+    <script type="text/JavaScript" src="js/header.js"></script> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!--------------Level 1 header finished [OLD]----------------->
+
+    <!--------------Level 2_left+right start----------------->
+    <div class="left-and-right-container">
+      <!--------------Level 2_left_Part1: searching engine start----------------->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="search-engine-container">
+            <div class="parameter-container spacing">
+              <!-- <h5>Please select one of the themes below for searching:</h5> -->
+              <div class="header-tab route-button active">Routes</div>
+              <div class="header-tab attraction-button">Attractions</div>
+            </div>
+
+            <div class="attraction-input-wrapper">
+              <div class="attraction-input-label">
+                <label for="attraction-dropdown">Attraction</label>
+                <select
+                  id="attraction-dropdown"
+                  name="attraction"
+                  value="blank"
+                >
+                  <option></option>
+                </select>
+              </div>
+            </div>
+            <div class="route-input-wrapper">
+              <div class="route-input-label">
+                <label for="route-dropdown">Route</label>
+                <select id="route-dropdown" name="route" value="blank">
+                  <option></option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <!--------------Level 2_left_Part1: searching engine finished----------------->
+          <!--------------Level 2_left_Part2: checkpoint start----------------->
+          <div class="attraction-route-container">
+            <span id="route-attraction-dropdown"></span>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./attractions_img/butterfly-beach.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./attractions_img/tuen-mun-promenade.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./attractions_img/butterfly-beach.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="card-container">
+                <div class="card">
+                    <img src="./attractions_img/butterfly-beach.png" class="card-image" alt="...">
+                    <div>
+                        <i class="bi bi-star-fill corner-star"></i>
+                    </div>
+                    <div>
+                        <div class="card-description">
+                            <h5 class="card-title">Text</h5>
+                            <p class="card-text">text</p>
+                        </div>
+                        <div class="stars-container">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./attractions_img/tuen-mun-promenade.png" class="card-image" alt="...">
+                    <div>
+                        <i class="bi bi-star-fill corner-star"></i>
+                    </div>
+                    <div>
+                        <div class="card-description">
+                            <h5 class="card-title">Text</h5>
+                            <p class="card-text">text</p>
+                        </div>
+                        <div class="stars-container">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+          <div class="routes-container">
+            <div>
+              <!-- <div id="route1">Route A</div> -->
+            </div>
+          </div>
+        </div>
+
+        <!--------------Level 2_left_Part2: checkpoint finished----------------->
+        <!--------------Level 2_right: Google map start----------------->
+        <div class="col-md-8">[For inserting Google map]</div>
+      </div>
+    </div>
+    <!--------------Level 2_right: Google map finished----------------->
+
+    <!--------------Level 2_left+right finished----------------->
+    <!--------------Level 3_footer start[OLD]----------------->
+    <!-- <div class="row"> -->
+    <!-- <div class="col-12"> -->
+    <!-- <span id="footer"></span>
+    <script type="text/JavaScript" src="js/footer.js"></script> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!--------------Level 3_footer finished [OLD]----------------->
+  </body>
+  <script src="./login.js"></script>
+  <script src="./search_old.js"></script>
+</html>
+
+<!-- <div class="likes-container spacing">
+                        <label for="likes">Likes</label>
+                        <select id="likes" name="likes" value="blank">
+                            <option value="blank"></option>
+                            <option value="five-star">5 stars</option>
+                            <option value="four-star">4 stars</option>
+                            <option value="three-star">3 stars</option>
+                            <option value="two-star">2 stars</option>
+                            <option value="one-star">1 star</option>
+                        </select>
+
+                    </div> -->
+<!-- <div class="submit-button spacing"><input type="submit" style="display: none">Submit</div> -->
+<!-- </form> -->
+
+<!-- <div class="district-container spacing">
+                        <label>District</label>
+                        <select id="district" name="cars" value="blank">
+                            <option value="blank"></option>
+                            <option value="new-territories">New Territories</option>
+                            <option value="kowloon">Kowloon</option>
+                            <option value="hk-island">Hong Kong Island</option>
+                        </select>
+                    </div> -->
+
+<!-- <div class="cards-container">
+                        <div class="card">
+                            <img src="search_img/searchimage_NSW_01.jpg" class="card-img-top" alt="...">
+                            <div><i class="bi bi-star-fill corner-star"></i></div>
+    
+    
+                            <div class="card-body">
+                                <h5 class="card-title">Nam Sang Wai: Pier</h5>
+                                <p class="card-text">Recommended for wedding photo-taking</p>
+                                <a href="#" class="btn btn-primary">See on map</a>
+                                <a href="#" class="btn btn-primary">See Route</a>
+                                <div class="stars-container spacing"><i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="card">
+                            <img src="search_img/searchimage_NSW_02.jpg" class="card-img-top" alt="...">
+                            <div><i class="bi bi-star-fill corner-star"></i></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Nam Sang Wai: Grove</h5>
+                                <p class="card-text"> Filing places for TV dramas in the pastime</p>
+                                <a href="#" class="btn btn-primary">See on map</a>
+                                <a href="#" class="btn btn-primary">See Route</a>
+                                <div class="stars-container spacing"><i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="search_img/searchimage_ST_01.jpg" class="card-img-top" alt="...">
+                            <div><i class="bi bi-star-fill corner-star"></i></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Sha Tin: Shing Mun River</h5>
+                                <p class="card-text">Sometimes you may walk by a dragon boat or two</p>
+                                <a href="#" class="btn btn-primary">See on map</a>
+                                <a href="#" class="btn btn-primary">See Route</a>
+                                <div class="stars-container spacing"><i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="search_img/searchimage_ST_02.jpg" class="card-img-top" alt="...">
+                            <div><i class="bi bi-star-fill corner-star"></i></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Sha Tin: Hong Kong Heritage Museum</h5>
+                                <p class="card-text">Exhibitions and cafe may surprise you</p>
+                                <a href="#" class="btn btn-primary">See on map</a>
+                                <a href="#" class="btn btn-primary">See Route</a>
+                                <div class="stars-container spacing"><i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="search_img/searchimage_TMT_01.jpg" class="card-img-top" alt="...">
+                            <div><i class="bi bi-star-fill corner-star"></i></div>
+                            <div class="card-body">
+                                <h5 class="card-title">Tai Mei Tuk: Sunset with boats</h5>
+                                <p class="card-text">Sea scouting activities are provided</p>
+                                <a href="#" class="btn btn-primary">See on map</a>
+                                <a href="#" class="btn btn-primary">See Route</a>
+                                <div class="stars-container spacing"><i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="search_img/searchimage_TMT_02.jpg" class="card-img-top" alt="...">
+                            <div><i class="bi bi-star-fill corner-star"></i></div>
+    
+                            <div class="card-body">
+                                <h5 class="card-title">Tai Mei Tuk: Lookout at Plover Cove Reservoir</h5>
+                                <p class="card-text">Long cyling trail after walking up the hill</p>
+                                <a href="#" class="btn btn-primary">See on map</a>
+                                <a href="#" class="btn btn-primary">See Route</a>
+                                <div class="stars-container spacing"><i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->

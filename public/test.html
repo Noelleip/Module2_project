@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+
+        <div class="navbar-left">
+            <div class="logo-container"><img src="./index_img/logo.png" class="logo" alt="logo"></div>
+            <div class="name">CYCLING FRIENDS</div>
+            <div class="container">a container</div>
+
+        </div>
+
+        <div class="navbar-right">
+
+            <button class="drop-btn">Hot!
+                <i class="fa fa-caret-down"></i>
+                <div class="dropdown-content">
+
+                    <div class="row">
+                        <div class="column-container">
+                            <div class="column1-topic">
+                                <a href="/search.html">Popular Routes</a>
+                                <div class="routeDetails">
+                                    <br><br><br>
+                                    `
+                                    <!-- for(let route of routes){
+            headerElem.innerHTML+=`<a href="/search.html?routeId=${route.id}">${route.name}</a>`
+        } -->
+                                    // <a href="/search.html?routeId=${}">屯門 – 元朗</a>
+                                    // <a href="/search.html?routeId=2">元朗 – 上水</a>
+                                    // <a href="/search.html?routeId=3">上水 – 大學站</a>
+                                    // <a href="/search.html?routeId=4">大學站 – 馬鞍山</a>
+                                    // <a href="/search.html?routeId=5">荃灣海濱段</a>
+                                    headerElem.innerHTML+=`
+                                </div>
+                            </div>
+                            <div class="column2-topic">
+                                <a href="detail.html">Popular Landscape</a>
+                                <div><a href="detail.html">Popular Landscape</a></div>
+                                <div class="routeDetails">
+                                    <br><br><br>`
+                                    for(let attraction of attractions){
+                                    headerElem.innerHTML+=`<a
+                                        href="/detail.html?attractionId=${attraction.id}">${attraction.name}</a>`
+                                    }
+                                    // <a href="/detail.html?attractionId=1">蝴蝶灣泳灘</a>
+                                    // <a href="/detail.html?attractionId=2">屯門海濱花園</a>
+                                    // <a href="/detail.html?attractionId=3">湖山河畔公園</a>
+                                    // <a href="/detail.html?attractionId=4">天后橋</a>
+                                    // <a href="/detail.html?attractionId=5">屯門公園</a>
+                                    // <a href="/detail.html?attractionId=6">青松觀</a>
+                                    // <a href="/detail.html?attractionId=7">藍地妙法寺</a>
+                                    // <a href="/detail.html?attractionId=8">屏山天水圍公共圖書館</a>
+                                    headerElem.innerHTML+=`
+                                </div>
+                            </div>
+                            <div class="nav-bar-images">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <h2>Mega Menu</h2>
+                    </div>
+
+                </div>
+            </button>
+
+
+        </div>
+        </button>
+
+        <span class='sign-in-wrapper'>
+
+            <a href="/login.html" style='color: black'>Login</a>
+            <a href="/register.html" style='color: black'>Register</a>
+
+        </span>
+
+        <span class='user-info-wrapper'>
+            <div class='user-info-inner-wrapper'>
+                <span class='username'></span>
+                <span class='userimage'></span>
+                <span class='logout-btn'> Logout</span>
+            </div>
+        </span>
+        <a href="/search.html" style='color: black'>Search</a>
+    </div>
+
+    </div>
+
+    </div>
+</body>
+
+</html>

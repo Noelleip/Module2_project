@@ -1,0 +1,121 @@
+.all-login-container {
+    background-image: url(./login_img/cycling_background.jpg);
+    background-color: black;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #125279;
+    font-weight: bold;
+    padding: 130px;
+    height: 618px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 35%;
+    padding-right: 35%;
+
+}
+
+.facebook-login {
+    width: 70%;
+    padding: 2%;
+    background-color: #395697;
+    color: white;
+    text-align: center;
+    margin: 2%
+}
+
+.facebook-login>a {
+    text-decoration: none;
+    color: white;
+}
+
+._4z_d ._4z_f {
+    font-size: 1rem !important;
+    visibility: hidden !important;
+}
+
+.google-login {
+
+    width: 80%;
+    padding: 2%;
+    background-color: white;
+    border: black solid 0.5px;
+    text-align: center;
+    /* margin: 2% */
+}
+
+.google-login>a {
+    text-decoration: none;
+    color: black;
+}
+
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+input {
+    width: 90%;
+    margin: 2%;
+}
+
+.login-button {
+    background-color: #125279;
+    padding: 2%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.email-login-button {
+    width: 70%;
+    padding: 2%;
+    background-color: #125279;
+    color: white;
+    text-align: center;
+    margin: 2%;
+}
+
+.email input,
+.password input {
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius: 100px;
+    border: none;
+    text-align: center;
+    outline: none;
+}
+
+.user-container {
+    display: none;
+}
+
+.btn-error {
+    background-color: #125279;
+    color: white;
+    padding: 5%;
+    transition: 0.5s;
+}
+
+.spacing {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.submit-btn {
+    height: 30px;
+    width: 80px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    background-color: #125279;
+    color: white;
+    margin-top: 15px;
+    transition: 0.5s;
+}

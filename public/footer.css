@@ -1,0 +1,301 @@
+/* .fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    position: relative;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.bi-facebook {
+    background: #70F3FF;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 100px;
+    right: 560px;
+}
+
+.bi-twitter {
+    background: #70F3FF;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 100px;
+    right: 510px;
+}
+
+.bi-instagram {
+    background: #70F3FF;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 100px;
+    right: 460px;
+}
+
+.bi-youtube {
+    background: #70F3FF;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 100px;
+    right: 410px;
+}
+
+.bi-github {
+    background: #70F3FF;
+    color: white;
+    position: absolute;
+    top: 100px;
+    right: 360px;
+}
+
+.bi-cart-fill {
+    background: #70F3FF;
+    color: white;
+    position: absolute;
+    top: 100px;
+    right: 360px;
+}
+
+/* .social-icon-container {
+    width: 100%;
+    height: 50px;
+} */
+
+/* .social-button-layout {
+    padding: 5px;
+    border-radius: 35%;
+    width: 45px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.social-button-layout:hover {
+    cursor: pointer;
+    border: #70F3FF solid 1px;
+    background-color: white;
+    color: #70F3FF;
+}
+
+.social-icon-login {
+    background: transparent;
+    color: white;
+}  */
+.body {
+    margin: 0;
+}
+
+#logoutButton {
+    border: transparent 1px rgb(196, 190, 190);
+    height: 40px;
+    width: 100px;
+    margin: 50px 10px;
+    padding: 8px;
+    font-size: large;
+    text-align: center;
+    background-color: rgb(152, 211, 152);
+    color: white;
+    text-decoration: none;
+    border-inline: rgb(152, 211, 152);
+}
+
+/* .default_logout_button {
+    all: unset;
+} */
+
+.fa-facebook {
+    background: #70F3FF;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 10%;
+    right: 80%;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+}
+
+.fa-twitter {
+    background: #70F3FF;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 10%;
+    right: 60%;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+}
+
+.fa-instagram {
+    background: #70F3FF;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 10%;
+    right: 40%;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+}
+
+.fa-youtube {
+    background: #70F3FF;
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+}
+
+/* .fa-github {
+    background: #70F3FF;
+    color: white;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    text-align: center;
+} */
+
+/* .fa-cart-fill {
+    background: #70F3FF;
+    color: white;
+    position: absolute;
+    top: 100px;
+    right: 360px;
+} */
+
+.social-button-layout {
+    padding: 5px;
+    border-radius: 35%;
+    width: 45px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.social-button-layout:hover {
+    cursor: pointer;
+    border: #70F3FF solid 1px;
+    background-color: white;
+    color: #70F3FF;
+}
+
+.social-icon-login {
+    background: transparent;
+    color: white;
+}
+
+.footer {
+    background-color: #12527942;
+    height: auto;
+    width: 100%;
+    margin: 0;
+}
+
+.social-container {
+    border: black;
+    height: 50px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #12527942;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media {
+
+    border: transparent 1px rgb(196, 190, 190);
+    height: auto;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    font-size: larger;
+
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    border: transparent 1px rgb(196, 190, 190);
+    height: auto;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    padding: 50px;
+    background-color: #12527942;
+}
+
+.footer-column {
+    width: 100%;
+    margin: 2%;
+    padding: 5% 15% 0 15%;
+    text-decoration: none;
+}
+
+.footer-list-topic {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #125279da;
+    padding-left: 5%;
+    margin-bottom: 30px;
+}
+
+.footer-list-details {
+    font-size: 1.5rem;
+    color: #125279a7;
+    padding-left: 5%;
+    line-height: 150%;
+    text-decoration: none;
+}
+
+.payment-label {
+    margin: 0;
+    width: 100%;
+    /* background-image: url(./index_img/footer-label.jpeg); */
+    height: 100px;
+    display: block;
+}
+
+.media-container {}
+
+/* .admin-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+} */
+
+.adminBtn {
+
+    text-decoration: none;
+
+}
+
+.adminBtn.hover {}

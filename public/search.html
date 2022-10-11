@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css" />
+  <link rel="stylesheet" href="search.css" />
+  <link rel="stylesheet" type="text/css" href="./google_map.css" />
+  <title>Cycling Friends | Search</title>
+</head>
+
+<body>
+  <div class="canvas">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="filter-container">
+            <div class="criteria-area">
+              <div class="criteria-inputs-area">
+                <div class="criteria-filter-method">
+                  <div class="criteria-title">
+                    <h5>搜索方法：</h5>
+                  </div>
+                  <div class="criteria-tab-area">
+                    <div class="criteria-tab route-button tab-active">
+                      路徑
+                    </div>
+                    <div class="criteria-tab attraction-button">景點</div>
+                  </div>
+                </div>
+                <!-- <div class="login-status">Hello</div> -->
+                <div class="criteria-filter-icons">
+                  <button class="btn log-out-button"><i class="bi bi-box-arrow-left"></i></button>
+                  <button class="btn home-button-container">
+                    <a href="/">
+                      <i class="bi bi-house-door-fill"></i>
+                    </a>
+                  </button>
+                </div>
+              </div>
+              <div class="dropdown-area-container">
+                <div class="dropdown-container">
+                  <div class="dropdown-area route-dropdown-area dropdown-active">
+                    <label for="route-dropdown">路徑</label>
+                    <select id="route-dropdown" name="route" value="blank">
+                      <option value="reset"></option>
+                    </select>
+                  </div>
+
+                  <div class="dropdown-area attraction-dropdown-area">
+                    <label for="attraction-dropdown">景點</label>
+                    <select id="attraction-dropdown" name="attraction" value="blank">
+                      <option value="reset"></option>
+                    </select>
+                  </div>
+                </div>
+                <button class="btn star-button">
+                  <i class="bi bi-star-fill saved-button"></i>
+                </button>
+                <!-- Button trigger modal -->
+                <!-- <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Launch demo modal
+                  </button> -->
+
+              </div>
+            </div>
+            <div class="result-title-area">
+              <div class="result-title">沿途景點</div>
+              <div class="route-button-container">
+                <a href="#" class="btn btn-outline-primary card-btn this-route-button">
+                  此路徑資訊
+                </a>
+              </div>
+            </div>
+            <!-- <div class="card-area"> -->
+            <div class="card-container" id="style-5"></div>
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="map-container">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="login-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <div class="fake-icon"></div> -->
+          <h5 class="modal-title" id="modalLabel">
+            登入
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="all-login-container">
+            <div class="login-container">
+              <div>登入以喜愛景點和路徑</div>
+              <div class="google-login-area">
+                <div class="google-title">Google 登入:</div>
+                <div class="google-login"><a href="/connect/google"><i class="bi bi-google"></i></a></div>
+              </div>
+              <div class="spacing">或</div>
+              <div class="email-title">電郵登入</div>
+              <form id="login-form" action="/user/login" method="POST">
+                <div class="email">
+                  <input type="text" id="useremail-login" name="useremail" placeholder="電郵" required />
+                </div>
+                <div class="password">
+                  <input id="password-login" type="password" name="password" placeholder="密碼" required />
+                </div>
+                <!-- <div>
+                  <input type="submit" id="submit-login" name="submit" class="submit-btn" value="Login">
+                </div> -->
+                <!-- <div>If you do
+                  not have an
+                  account, please <a href="./register.html">register</a>.
+                </div> -->
+              </form>
+
+            </div>
+          </div>
+          <div class="all-register-container">
+            <div class="register-container">
+              <div>
+                <div class="register-title">註冊帳戶</div>
+              </div>
+              <div>
+                <form id="register-form" action="/user/register" method="POST">
+                  <div class="username-form">
+                    <input type="text" id="username-register" name="username" placeholder="名稱" required />
+                  </div>
+                  <div class="email">
+                    <input type="text" id="useremail-register" name="useremail" placeholder="電郵" required />
+                  </div>
+                  <div class="password">
+                    <input id="password-register" type="password" name="password" placeholder="密碼" required />
+                  </div>
+                  <div>
+                    <input id="confirm_pass-register" type="password" name="confirmpass" placeholder="確定密碼" required>
+                  </div>
+                  <!-- <div class="buttons">
+                    <input type="submit" id="submit-register" value="Register" class="submit_btn"> -->
+                </form>
+              </div>
+            </div>
+            <!-- <div>
+              If you have registered your account, you may go back to <a href="./login.html">Login
+                Page</a>.
+            </div> -->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-primary modal-button"> -->
+          <input type="submit" form="login-form" id="submit-login" class="btn btn-primary modal-button" name="submit"
+            value="登入" />
+          <!-- 登入
+          </button> -->
+          <!-- <button type="button" class="btn btn-secondary modal-button"> -->
+          <input type="submit" form="register-form" class="btn btn-secondary modal-button" id="submit-register"
+            value="註冊">
+          <!-- 註冊
+          </button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- <script src="./login.js"></script> -->
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+<script type="module" src="./google_map.js"></script>
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSlr9_j8KPewU5R99i1Iy_p0i6RQZUrJE&callback=initMap&v=weekly"
+  defer></script>
+<script type="module" src="./search.js"></script>
+
+</html>

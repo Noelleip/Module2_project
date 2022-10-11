@@ -1,0 +1,152 @@
+.all-register-container {
+    background-image: url(./login_img/cycling_background.jpg);
+    background-color: black;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #125279;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    margin: 0px;
+}
+
+
+.register {
+    font-size: 2rem !important;
+    background-color: transparent !important;
+    color: #125279;
+    text-decoration: none;
+}
+
+.register-button,
+.register-button:hover {
+    padding: 2%;
+    background-color: #125279;
+    color: white;
+    text-decoration: none;
+}
+
+.spacing {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    height: 400px;
+    width: 300px;
+    margin-top: 15%;
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px transparent;
+}
+
+.pass {
+    display: flex;
+    flex-direction: column;
+}
+
+.image h2 {
+    color: #125279;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+}
+
+
+.username-form,
+.email,
+.password {
+    width: 100%;
+}
+
+
+.userimage {
+    width: 80%;
+    height: 90px;
+    color: gray;
+    font-weight: light;
+    margin: 10%;
+    background-color: white;
+    border: 1px dashed gray;
+    position: relative;
+
+}
+
+.userimage-text-1 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    font-weight: initial;
+    z-index: 1;
+    top: 20%;
+}
+
+.userimage-text-2 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    font-weight: initial;
+    z-index: 0;
+    top: 45%;
+}
+
+.userimage input {
+    width: 100%;
+    height: 75px;
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+}
+
+.bi-upload {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.username-form input,
+.email input,
+.password input {
+
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius: 100px;
+    border: none;
+    text-align: center;
+    outline: none;
+}
+
+.submit_btn {
+    height: 30px;
+    width: 80px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    background-color: #125279;
+    color: white;
+    margin-top: 15px;
+    transition: 0.5s;
+}
+
+.submit_btn:hover {
+    background-color: white;
+    color: #125279;
+    border: 1px solid #125279;
+    cursor: pointer;
+}
