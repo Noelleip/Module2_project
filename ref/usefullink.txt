@@ -1,0 +1,15 @@
+Git(used for git clone):
+git@github.com:jeffrey-liuchunsiu/tecky-group-project-1.git
+
+Links:
+https://www.figma.com/file/P21xcono7opOhPRHY9pLa6/Tecky_Module2_WSP-Project?node-id=0%3A1
+
+
+cdn
+May go to website to get cdn: https://cdnjs.com/libraries/Swiper
+
+
+our frame outlook is refer to:
+https://themes.getbootstrap.com/product/directory-directory-listing-react-theme/
+or 
+https://themes.getbootstrap.com/preview/?theme_id=51113
